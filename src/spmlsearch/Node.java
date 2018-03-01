@@ -7,7 +7,8 @@ package spmlsearch;
 
 /**
  *
- * @author leanderheuvel
+ * @author Leander van den Heuvel, s4749707
+ * @author Jaap van Bussel, s4805879
  */
 public class Node {
     
