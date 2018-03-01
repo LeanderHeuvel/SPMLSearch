@@ -5,6 +5,8 @@
  */
 package spmlsearch;
 
+import java.util.PriorityQueue;
+
 /**
  *
  * @author Leander van den Heuvel, s4749707
@@ -16,7 +18,7 @@ public class SPMLSearch {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        PriorityQueue<Node> queue = new PriorityQueue();
     }
     
 }
