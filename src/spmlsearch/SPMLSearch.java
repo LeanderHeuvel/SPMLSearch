@@ -18,7 +18,7 @@ public class SPMLSearch {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        PriorityQueue<Node> queue = new PriorityQueue();
+        PriorityQueue<Vertex> queue = new PriorityQueue();
     }
     
 }
