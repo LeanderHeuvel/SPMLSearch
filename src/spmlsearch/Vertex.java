@@ -14,8 +14,7 @@ package spmlsearch;
  * @author Jaap van Bussel, s4805879
  */
 public class Vertex{
-    private int x;
-    private int y;
+    private final int x, y;
     
     public Vertex (int x, int y){
         this.x = x;
