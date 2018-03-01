@@ -13,9 +13,13 @@ import java.util.PriorityQueue;
  * @author jaapv
  */
 public class Graph {
-    ArrayList<Vertex> visitedVertex = new ArrayList<>();
-    ArrayList<Vertex> unvisitedVertex = new ArrayList<>();
+    ArrayList<Vertex> visVertex = new ArrayList<>();
+    ArrayList<Vertex> unvisVertex = new ArrayList<>();
     ArrayList<Edge> edges = new ArrayList<>();
     PriorityQueue<Edge> queue = new PriorityQueue();
+    
+    public Graph(ArrayList<Vertex> visVertex, ArrayList<Vertex> unvisVertex, ArrayList<Edge> edges, PriorityQueue<Edge> queue){
+        
+    }
 
 }
