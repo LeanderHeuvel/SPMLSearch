@@ -5,6 +5,8 @@
  */
 package spmlsearch;
 
+import java.util.ArrayList;
+
 /**
  * graph: visited vertices [vertice, x, y], unvisited vertices, edges
  * vertex: x, y
@@ -14,18 +16,10 @@ package spmlsearch;
  * @author Jaap van Bussel, s4805879
  */
 public class Vertex{
-    private final int x, y;
-    
-    public Vertex (int x, int y){
-        this.x = x;
-        this.y = y;
+    private ArrayList<Edge> connections;
+    private String name;
+    public Vertex (String name, ArrayList connections){
+        this.name = name;
+        this.connections = connections;
     } 
-    
-    public int getXPos(){
-        return x;
-    }
-    
-    public int getYPos(){
-        return y;
-    }
 }
