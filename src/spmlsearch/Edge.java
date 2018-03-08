@@ -13,21 +13,24 @@ import java.util.ArrayList;
  * @author Leander van den Heuvel
  */
 public class Edge {
-    private final Vertex from, to;
+    private final String to;
     private int cost;
-    public Edge(Vertex from, Vertex to, int cost) {  
-        this.from = from;
+    
+    public Edge(String to, int cost) {  
         this.to = to;
         this.cost = cost;
     }
     public int getCost() {
         return cost;
     }
-    public ArrayList <Vertex> getVertices() {
-        ArrayList <Vertex> vertices = new ArrayList();
-        vertices.add(from);
-        vertices.add(to);
-        return vertices;
+    public String getToName() {
+        return to;
     }
     
+    @Override
+    public String toString(){
+        return "cost: "+cost+", to name: "+to;
+    }
 }
+
+

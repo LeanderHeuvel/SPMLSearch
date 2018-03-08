@@ -18,8 +18,14 @@ import java.util.ArrayList;
 public class Vertex{
     private ArrayList<Edge> connections;
     private String name;
-    public Vertex (String name, ArrayList connections){
+    public Vertex (String name, ArrayList<Edge> connections){
         this.name = name;
         this.connections = connections;
     } 
+    
+    public String toString(){
+        String string = name+"\n";
+        string = string+connections.toString()+"\n";
+        return string;
+    }
 }
