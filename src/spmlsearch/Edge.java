@@ -5,21 +5,20 @@
  */
 package spmlsearch;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author Jaap van Bussel
  * @author Leander van den Heuvel
  */
 public class Edge {
-    private final String to;
+    private String to;
     private int cost;
     
     public Edge(String to, int cost) {  
         this.to = to;
         this.cost = cost;
     }
+    
     public int getCost() {
         return cost;
     }
@@ -29,7 +28,7 @@ public class Edge {
     
     @Override
     public String toString(){
-        return "cost: "+cost+", to name: "+to;
+        return to+" cost "+cost;
     }
 }
 

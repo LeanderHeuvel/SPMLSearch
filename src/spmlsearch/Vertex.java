@@ -8,24 +8,45 @@ package spmlsearch;
 import java.util.ArrayList;
 
 /**
- * graph: visited vertices [vertice, x, y], unvisited vertices, edges
- * vertex: x, y
- * edge: x1,y1,x2,y2,length
  * 
  * @author Leander van den Heuvel, s4749707
  * @author Jaap van Bussel, s4805879
  */
 public class Vertex{
-    private ArrayList<Edge> connections;
     private String name;
-    public Vertex (String name, ArrayList<Edge> connections){
+    private int key;
+    private ArrayList<Edge> connections;
+
+    public Vertex (String name, int key, ArrayList<Edge> connections){
         this.name = name;
+        this.key = key;
         this.connections = connections;
     } 
     
+    public ArrayList<Edge> getConnections(){
+        return connections;
+    }
+    
+    public Edge getConnectionsEdge(int i){
+        return connections.get(i);
+    }
+    
+    public String getName(){
+        return name;
+    }
+    
+    public int getKey(){
+        return key;
+    }
+    
+    public void setKey(int key){
+        this.key = key;
+    }
+    
+    @Override
     public String toString(){
-        String string = name+"\n";
-        string = string+connections.toString()+"\n";
+        String string = name+", key:"+key;
+        //string = string+connections.toString()+"\n";
         return string;
     }
 }
