@@ -19,7 +19,7 @@ public final class Graph {
     }
     
     public ArrayList<Vertex> getAllVertex() {
-        return allVertex;
+        return new ArrayList(allVertex);
     }
     
     public void fill() {

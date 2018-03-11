@@ -46,7 +46,7 @@ public class SPMLSearch {
             System.out.println("!!!!"+unvisVertices);
             visVertices.add(expandedVertex);
             System.out.println("!!!!!"+unvisVertices);
-            queue.clear();
+            queue = new PriorityQueue<Vertex>(9, comparator);
         }
     }
     
