@@ -5,17 +5,13 @@
  */
 package spmlsearch;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Leander van den Heuvel, s4749707
- * @author Jape van Bussel, s4805879
  */
-public class SPMLSearch {
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        Graph graph = new Graph();
-        new MinSpanTree(graph).start();
-    }
+public interface ObjectObserver {
+    public void showUnvisited(ArrayList<Vertex> unVisVertices);
+    public void showExpanded(Vertex expanded);
 }
